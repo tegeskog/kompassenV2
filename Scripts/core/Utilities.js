@@ -181,6 +181,13 @@
                     html += "<td>" + courses[index].credits + "</td>";
                     html += "<td>" + courses[index].students.length + "</td>";
                     html += "<td><button id='edit_course' class='btn btn-info' data-item-id='" + courses[index].id + "' data-item-aktiv='" + courses[index].active + "'>Edit</button></td>";
+                    if (courses[index].active) {
+                        html += "<td><div style='font-weight: bold; color: green;'>Aktiv kurs</div></td>";
+                    }
+                    else
+                    {
+                        html += "<td><div style='font-weight: bold; color: red;'>Inaktiv kurs</div></td>";
+                    }
                     html += "</tr>";
                 }
                 tbody.append(html);
@@ -200,7 +207,7 @@
                   html += "<td>" + students[index].firstName + "</td>";
                   html += "<td>" + students[index].lastName + "</td>";
                   html += "<td>" + students[index].personnummer + "</td>";
-                  html += "<td><button id='edit_student' class='btn btn-info' data-item-id='" + students[index].id + "'>Edit</button></td>";
+                  html += "<td><button id='edit_student' class='btn btn-info' data-item-id='" + students[index].id + "'><span>Edit</span></button></td>";
                   html += "</tr>";
               }
               tbody.append(html);
@@ -228,8 +235,6 @@
                     console.log(jqXHR.responseText || textStatus);
                 });
             }
-
-
 
             Page.displayCourseDetails = function (id) {
                 console.log("[Page.displayCourseDetails]: Fetching item having id: " + id);

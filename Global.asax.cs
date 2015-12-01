@@ -59,7 +59,7 @@ namespace WU15.StudentAdministration.Web
                 Name = "Pedagogik 1",
                 Term = "VT",
                 Year = "2015",
-                Active = true
+                Active = false
             };
             Courses.Add(course);
 
@@ -72,7 +72,7 @@ namespace WU15.StudentAdministration.Web
                 Name = "Pedagogik 2",
                 Term = "VT",
                 Year = "2015",
-                Active = true
+                Active = false
             };
             Courses.Add(course);
 
