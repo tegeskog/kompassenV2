@@ -80,9 +80,9 @@
             $("#courseListTable").on("click", function (event) {
                 var id = $(event.target).data("itemId");
                 var active = $(event.target).data("itemAktiv");
-                var cb = $(event.target).hasClass("checkbox_course");
+                
                 console.log("Edit mode: " + id);
-                $("#edit_course").text("Inaktiv");
+                
 
                 Page.activatCourseDetails(id);
                 

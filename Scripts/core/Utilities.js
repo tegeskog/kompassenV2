@@ -180,7 +180,7 @@
                     html += "<td>" + courses[index].name + "</td>";
                     html += "<td>" + courses[index].credits + "</td>";
                     html += "<td>" + courses[index].students.length + "</td>";
-                    html += "<td><button id='edit_course' class='btn btn-info' data-item-id='" + courses[index].id + "' data-item-aktiv='" + courses[index].active + "'>Edit</button></td>";
+                    html += "<td><button id='edit_course' class='btn btn-info' data-item-id='" + courses[index].id + "' data-item-aktiv='" + courses[index].active + "'>" + "Edit" + "</button></td>";
                     if (courses[index].active) {
                         html += "<td><div style='font-weight: bold; color: green;'>Aktiv kurs</div></td>";
                     }
@@ -207,7 +207,7 @@
                   html += "<td>" + students[index].firstName + "</td>";
                   html += "<td>" + students[index].lastName + "</td>";
                   html += "<td>" + students[index].personnummer + "</td>";
-                  html += "<td><button id='edit_student' class='btn btn-info' data-item-id='" + students[index].id + "'><span>Edit</span></button></td>";
+                  html += "<td data-item-id='" + students[index].id + "'><button id='edit_student' class='btn btn-info' data-item-id='" + students[index].id + "'>Edit</button></td>";
                   html += "</tr>";
               }
               tbody.append(html);
@@ -459,7 +459,7 @@
 
             }
 
-            // Saves a course and does'nt do a view update.
+            // Saves a course and view.
 
             Page.saveCourseDetails = function (course) {
 
@@ -558,8 +558,10 @@
                 if (numberOfRegisteredStudents === 0) {
                     configuration.courseDetailsStudentListPlaceholder.empty();
                 }
-
-                Page.appendStudentToList(student);
+                if (id >= 1) {
+                    Page.appendStudentToList(student);
+                    console.log("Registring student having id " + id + ".");
+                }
 
                 console.log("Registring student having id " + id + ".");
             }
