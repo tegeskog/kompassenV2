@@ -138,16 +138,21 @@
                             + courses[courseIndex].name
                             + "</a>";
                         item += "<p class='list-group-item course-item-info'>Kursstart " + courses[courseIndex].term + " " + courses[courseIndex].year
-                            + "<a style='float: right;' class='list-group-addon glyphicon glyphicon-user'></a>" // The user icon.
+                            //+ "<a style='float: right;' class='list-group-addon glyphicon glyphicon-user'></a>" // The user icon.
                             + "</p>";
 
                         // Students
                         if (courses[courseIndex].students.length > 0) {
                             for (var subIndex = 0; subIndex < courses[courseIndex].students.length; subIndex++) {
-                                item += "<a href='#' class='list-group-item'>" + courses[courseIndex].students[subIndex].firstName + " " + courses[courseIndex].students[subIndex].lastName + "</a>";
+
+                                item += "<a href='#' class='list-group-item'>" + courses[courseIndex].students[subIndex].firstName + " " + courses[courseIndex].students[subIndex].lastName + "</a>"; 
                             }
                         } else {
                             item += "<span class='list-group-item'>Kursen har inga studenter registrerade.</span>";
+                        }
+
+                        if (courses[courseIndex].active == false) {
+                            item += "<span class='list-group-item' style='background-color: red;'>Inaktiverad Kurs</span>";
                         }
 
                         item += "</div>";
@@ -175,6 +180,7 @@
                     html += "<td>" + courses[index].name + "</td>";
                     html += "<td>" + courses[index].credits + "</td>";
                     html += "<td>" + courses[index].students.length + "</td>";
+                    html += "<td><button id='edit_course' class='btn btn-info' data-item-id='" + courses[index].id + "' data-item-aktiv='" + courses[index].active + "'>Edit</button></td>";
                     html += "</tr>";
                 }
                 tbody.append(html);
@@ -201,6 +207,29 @@
 
               configuration.studentListPlaceholder.fadeIn(500);
             }
+
+            Page.activatCourseDetails = function (id) {
+                console.log("[Page.displayCourseDetails]: Fetching item having id: " + id);
+
+                $.ajax({
+                    type: "GET",
+                    url: configuration.coursesUrl + id
+                }).done(function (data) {
+
+                    data.active = !data.active;
+                    console.log(data.active);
+
+                    var aktiv = data.active;
+                    
+                    Page.saveCourseDetails(data);
+
+
+                }).error(function (jqXHR, textStatus, errorThrown) {
+                    console.log(jqXHR.responseText || textStatus);
+                });
+            }
+
+
 
             Page.displayCourseDetails = function (id) {
                 console.log("[Page.displayCourseDetails]: Fetching item having id: " + id);
@@ -238,7 +267,7 @@
                     console.log(jqXHR.responseText || textStatus);
                 });
             }
-
+            // Render studentlist on studentpage
             Page.renderStudentDetails = function (student) {
                 // Hide the default view.
                 configuration.defaultPlaceholder.hide();
@@ -248,7 +277,7 @@
                 $(form["id"]).val(student.id);
                 $(form["firstName"]).val(student.firstName);
                 $(form["lastName"]).val(student.lastName);
-                //$(form["personnummer"]).val(student.personnummer);
+                $(form["personnummer"]).val(student.personnummer);
 
 
                 // Set the details panel top header text.

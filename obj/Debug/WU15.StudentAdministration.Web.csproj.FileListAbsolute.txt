@@ -33,3 +33,38 @@ C:\SkolProjekts\studentadministration-master 2\WU15.StudentAdministration.Web\bi
 C:\SkolProjekts\studentadministration-master 2\WU15.StudentAdministration.Web\obj\Debug\WU15.StudentAdministration.Web.csprojResolveAssemblyReference.cache
 C:\SkolProjekts\studentadministration-master 2\WU15.StudentAdministration.Web\obj\Debug\WU15.StudentAdministration.Web.dll
 C:\SkolProjekts\studentadministration-master 2\WU15.StudentAdministration.Web\obj\Debug\WU15.StudentAdministration.Web.pdb
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\obj\Debug\WU15.StudentAdministration.Web.csprojResolveAssemblyReference.cache
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\obj\Debug\WU15.StudentAdministration.Web.dll
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\obj\Debug\WU15.StudentAdministration.Web.pdb
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\WU15.StudentAdministration.Web.dll.config
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\WU15.StudentAdministration.Web.dll
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\WU15.StudentAdministration.Web.pdb
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\Antlr3.Runtime.dll
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\Newtonsoft.Json.dll
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\System.Net.Http.Formatting.dll
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\System.Web.Cors.dll
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\System.Web.Helpers.dll
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\System.Web.Http.Cors.dll
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\System.Web.Http.dll
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\System.Web.Http.WebHost.dll
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\System.Web.Mvc.dll
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\System.Web.Optimization.dll
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\System.Web.Razor.dll
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\System.Web.WebPages.Deployment.dll
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\System.Web.WebPages.dll
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\System.Web.WebPages.Razor.dll
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\WebGrease.dll
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\System.Net.Http.Formatting.xml
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\System.Web.Http.xml
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\System.Web.Http.Cors.xml
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\System.Web.Helpers.xml
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\System.Web.Mvc.xml
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\System.Web.Optimization.xml
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\System.Web.Razor.xml
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\System.Web.WebPages.xml
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\System.Web.WebPages.Deployment.xml
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\System.Web.WebPages.Razor.xml
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\Antlr3.Runtime.pdb
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\Newtonsoft.Json.xml
+E:\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\System.Web.Http.WebHost.xml

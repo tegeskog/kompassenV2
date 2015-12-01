@@ -41,7 +41,7 @@ namespace WU15.StudentAdministration.Web.API
             }
             MvcApplication.Students.Add(student);
 
-            return student.Name;
+            return string.Format("{0}{1}", student.FirstName, student.LastName);
         }
 
         [HttpDelete]

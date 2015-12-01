@@ -5,10 +5,10 @@
             Page.setup({
                 organizationId: "c08bdab7-ed3d-4048-8338-d4f14f2770a8",
                 numberOfColumnsPerRow: 3,
-                //studentsUrl: "http://localhost:45959/api/students/",
-                //coursesUrl: "http://localhost:45959/api/courses/",
-                studentsUrl: "http://api.wu15.se/api/students/",
-                coursesUrl: "http://api.wu15.se/api/courses/",
+                studentsUrl: "http://localhost:45959/api/students/",
+                coursesUrl: "http://localhost:45959/api/courses/",
+                //studentsUrl: "http://api.wu15.se/api/students/",
+                //coursesUrl: "http://api.wu15.se/api/courses/",
                 defaultPlaceholder: $("#defaultPlaceholder"),
                 courseDetailsPlaceholder: $("#courseDetailsPlaceholder"),
                 courseDetailsStudentListPlaceholder: $("#courseDetailsStudentListPlaceholder"),
@@ -72,6 +72,15 @@
                 });
 
                 Page.saveCourseAndDisplayDefault(course);
+            });
+
+            // Editmode in courselistTable
+            $("#courseListTable").on("click", function () {
+                var id = $(event.target).data("itemId");
+                var active = $(event.target).data("itemAktiv");
+                console.log("Edit mode: " + id);
+                Page.activatCourseDetails(id);
+                
             });
 
             $("#studentListTable").on("click", function(){
