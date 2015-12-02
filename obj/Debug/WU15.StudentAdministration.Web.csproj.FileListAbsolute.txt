@@ -103,3 +103,46 @@ C:\Users\cv14-37\Desktop\Ok-program\Kompassen(V.1)\WU15.StudentAdministration.We
 C:\Users\cv14-37\Desktop\Ok-program\Kompassen(V.1)\WU15.StudentAdministration.Web\obj\Debug\WU15.StudentAdministration.Web.csprojResolveAssemblyReference.cache
 C:\Users\cv14-37\Desktop\Ok-program\Kompassen(V.1)\WU15.StudentAdministration.Web\obj\Debug\WU15.StudentAdministration.Web.dll
 C:\Users\cv14-37\Desktop\Ok-program\Kompassen(V.1)\WU15.StudentAdministration.Web\obj\Debug\WU15.StudentAdministration.Web.pdb
+C:\Users\cv14-37\Desktop\Ok-program\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\EntityFramework.dll
+C:\Users\cv14-37\Desktop\Ok-program\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\cv14-37\Desktop\Ok-program\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\EntityFramework.xml
+C:\Users\cv14-37\Desktop\Ok-program\Kompassen(V.1)\WU15.StudentAdministration.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\WU15.StudentAdministration.Web.dll.config
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\WU15.StudentAdministration.Web.dll
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\WU15.StudentAdministration.Web.pdb
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\Antlr3.Runtime.dll
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\EntityFramework.dll
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\Newtonsoft.Json.dll
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\System.Net.Http.Formatting.dll
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\System.Web.Cors.dll
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\System.Web.Helpers.dll
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\System.Web.Http.Cors.dll
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\System.Web.Http.dll
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\System.Web.Http.WebHost.dll
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\System.Web.Mvc.dll
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\System.Web.Optimization.dll
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\System.Web.Razor.dll
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\System.Web.WebPages.dll
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\WebGrease.dll
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\EntityFramework.xml
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\System.Net.Http.Formatting.xml
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\System.Web.Http.xml
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\System.Web.Http.Cors.xml
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\System.Web.Helpers.xml
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\System.Web.Mvc.xml
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\System.Web.Optimization.xml
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\System.Web.Razor.xml
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\System.Web.WebPages.xml
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\Antlr3.Runtime.pdb
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\Newtonsoft.Json.xml
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\bin\System.Web.Http.WebHost.xml
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\obj\Debug\WU15.StudentAdministration.Web.csprojResolveAssemblyReference.cache
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\obj\Debug\WU15.StudentAdministration.Web.dll
+C:\Users\cv14-37\Desktop\Ok-program\Till Arne(redovisning)\Kompassen(V.1)_ver.3\WU15.StudentAdministration.Web\obj\Debug\WU15.StudentAdministration.Web.pdb

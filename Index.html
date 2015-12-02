@@ -3,23 +3,28 @@
 <head>
     <title>Kompassen - Alltid på rätt kurs</title>
 
-
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="Content/core/style.css" rel="stylesheet" />
+    <link href="Content/core/spinner.css" rel="stylesheet" />
 
     <script src="Scripts/jquery-2.1.4.js"></script>
     <script src="Scripts/bootstrap.js"></script>
     <script src="Scripts/js/app.js"></script>
     <script src="Scripts/js/utilities.js"></script>
-    <!--<script src="Scripts/core/app.js"></script>
-    <script src="Scripts/core/utilities.js"></script>-->
-
+    <script src="Scripts/js/spinner.js"></script>
+    
 </head>
 <body>
-
+    <!-- Loading screen spinner -->
+    <div class="cssload-cube">
+        <div class="cssload-face cssload-x"></div>
+        <div class="cssload-face cssload-y"></div>
+        <div class="cssload-face cssload-z"></div>
+    </div>
+    <!-- Navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-
+           
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
@@ -174,6 +179,8 @@
                             <th>Namn</th>
                             <th>Poäng</th>
                             <th>Antal studenter</th>
+                            <th>Akivera/Inaktivera Student</th>
+                            <th>Status</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -230,6 +237,8 @@
                           <th>Efternamn</th>
                           <th>Personnummer</th>
                           <th>Edit</th>
+                          <th></th>
+                          <th>Status</th>
                       </tr>
                   </thead>
                   <tbody>

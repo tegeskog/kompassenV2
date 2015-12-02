@@ -30,7 +30,9 @@ $(document).ready(function () {
         if (toggleVisibility) {
 
             var target = $(event.target);
+            $("#student_link").css("visibility", "visible");
             $(target).siblings("a").slideToggle("slow");
+
 
         }
         // if the users push editbutton...
@@ -74,8 +76,6 @@ $(document).ready(function () {
         Page.saveCourseAndDisplayDefault(course);
     });
 
-
-
     // Editmode in courselistTable
     $("#courseListTable").on("click", function (event) {
         var id = $(event.target).data("itemId");
@@ -90,8 +90,28 @@ $(document).ready(function () {
 
     $("#studentListTable").on("click", function () {
         var id = $(event.target).data("itemId");
-        console.log("Edit mode: " + id);
-        Page.displayStudentDetails(id);
+        var aktiv = $(event.target).data("itemAktiv");
+        var aktivStudent = $(event.target).hasClass("aktivStudent");
+        var editStudent = $(event.target).hasClass("editStudent");
+
+        if (editStudent) {
+            console.log("Edit mode: " + id);
+            Page.displayStudentDetails(id);
+        }
+
+        if (aktivStudent) {
+            console.log("aktiv mode: " + id);
+            
+            if(aktiv == true){
+                $("#aktivStudent").css({ "backgroundColor": "lightgreen" });
+            }
+            if (aktiv == false) {
+                $("#aktivStudent").css({ "backgroundColor":"lightred" });
+            }
+            Page.activatStudentDetails(id);
+        }
+        
+        
     });
     // Remove a registered student.
     $("#courseDetailsStudentListPlaceholder").on("click", ".remove-registered-student", function (event) {
@@ -114,6 +134,7 @@ $(document).ready(function () {
         Page.registerSelectedStudent();
 
     });
+
     // Sets activ to the active bar.
     $('.navbar li, a').click(function (e) {
         $('.navbar li.active').removeClass('active');
@@ -149,6 +170,9 @@ $(document).ready(function () {
     $("#studentListAddCourseForm").submit(function (event) {
         event.preventDefault();
         console.log("[studentListAddCourseForm.submit]: Submitted the new Student form.");
+
+        // Validera studenten. Namn, efternamn, personnummer....
+
 
         var student = Utilities.formToJson(this);
         student.students = [];
