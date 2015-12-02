@@ -40,12 +40,13 @@ namespace WU15.StudentAdministration.Web
             //GlobalConfiguration.Configuration.Formatters.Insert(0, new JsonpMediaTypeFormatter());
             GlobalConfiguration.Configuration.MessageHandlers.Add(new XHttpMethodOverrideDelegatingHandler());
 
-            Courses = new List<Course>();
-            Students = new List<Student>();
-            LoadStudents();
-            LoadCourses();
+            GlobalConfiguration.Configuration.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+            //Courses = new List<Course>();
+            //Students = new List<Student>();
+            //LoadStudents();
+            //LoadCourses();
 
-            KeepAliveThread.Start();
+            //KeepAliveThread.Start();
         }
 
         private static void LoadCourses()
@@ -126,7 +127,7 @@ namespace WU15.StudentAdministration.Web
                 Id = 1,
                 FirstName = "Kalle",
                 LastName = "Bengtsson",
-                Personnummer = "760101-1111",
+                Personnummer = "760101-9999",
                 Active = true
             };
             Students.Add(student);
@@ -136,7 +137,7 @@ namespace WU15.StudentAdministration.Web
                 Id = 2,
                 FirstName = "Eva",
                 LastName = "Andersson",
-                Personnummer = "760101-1111",
+                Personnummer = "760101-4444",
                 Active = true
             };
             Students.Add(student);
@@ -146,7 +147,7 @@ namespace WU15.StudentAdministration.Web
                 Id = 3,
                 FirstName = "Ylva",
                 LastName = "Nordsson",
-                Personnummer = "760101-1111",
+                Personnummer = "760101-5555",
                 Active = true
             };
             Students.Add(student);
@@ -156,7 +157,7 @@ namespace WU15.StudentAdministration.Web
                 Id = 4,
                 FirstName = "Evy",
                 LastName = "Carlsson",
-                Personnummer = "760101-1111",
+                Personnummer = "760101-7711",
                 Active = true
             };
             Students.Add(student);
@@ -166,7 +167,7 @@ namespace WU15.StudentAdministration.Web
                 Id = 5,
                 FirstName = "Lisa",
                 LastName = "Olofsson",
-                Personnummer = "760101-1111",
+                Personnummer = "760101-6666",
                 Active = true
             };
             Students.Add(student);
@@ -176,7 +177,7 @@ namespace WU15.StudentAdministration.Web
                 Id = 6,
                 FirstName = "Robert",
                 LastName = "Tovek",
-                Personnummer = "760101-1111",
+                Personnummer = "760101-2222",
                 Active = true
             };
             Students.Add(student);

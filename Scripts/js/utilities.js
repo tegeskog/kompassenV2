@@ -89,7 +89,7 @@ var Page = new function Page() {
             url: configuration.studentsUrl,
             data: { sid: configuration.organizationId }
         }).done(function (data) {
-            console.log("[Page.displayStudentList]: Number of items returned: " + data.length);
+            //console.log("[Page.displayStudentList]: Number of items returned: " + data.length);
             data.sort(function (a, b) {
                 if (a.id > b.id) {
                     return 1;
@@ -144,16 +144,33 @@ var Page = new function Page() {
                 // Students
                 if (courses[courseIndex].students.length > 0) {
                     for (var subIndex = 0; subIndex < courses[courseIndex].students.length; subIndex++) {
+                        if (courses[courseIndex].students[subIndex].active == true) {
+                            item += "<a id='student_link' href='#' class='list-group-item' style='display: none; background: #eeffcc;'>" + "<span class='student' style='font-weight: bold;'>" + " " + courses[courseIndex].students[subIndex].firstName + " " + courses[courseIndex].students[subIndex].lastName + "</span>" + courses[courseIndex].students[subIndex].personnummer + " " + "<span class='glyphicon glyphicon-thumbs-up' style='color: #aaaaff'></span></a>";
 
-                        item += "<a href='#' class='list-group-item'>" + courses[courseIndex].students[subIndex].firstName + " " + courses[courseIndex].students[subIndex].lastName + "</a>";
+                        }
+                        else {
+                            item += "<a id='student_link' href='#' class='list-group-item' style='display: none; background:  #eeffcc;'>" + "<span class='student' style='font-weight: bold;'>" + " " + courses[courseIndex].students[subIndex].firstName + " " + courses[courseIndex].students[subIndex].lastName + "</span>" + courses[courseIndex].students[subIndex].personnummer + " " + "<span class='glyphicon glyphicon-thumbs-down' style='color: #E44424'></span></a>";
+                        }
+                        
                     }
                 } else {
                     item += "<span class='list-group-item'>Kursen har inga studenter registrerade.</span>";
                 }
+                console.log("Det finns " + courses[courseIndex].students.length + " Studenter.")
+
+                // Antal studenter på kursen
+                var antal = courses[courseIndex].students.length;
+                
+                item += "<span class='list-group-item'>" +"Det finns "+ "<span id='antal_students'>" + antal + "</span>" + " studenter på kursen" +"</span>";
+              
 
                 if (courses[courseIndex].active == false) {
-                    item += "<span class='list-group-item' style='background-color: red;'>Inaktiverad Kurs</span>";
+                    item += "<span class='list-group-item' style='background-color: #ffc0cb; font-weight: bold;'>Inaktiverad Kurs</span>";
                 }
+                else {
+                    item += "<span class='list-group-item' style='background-color: #00ff7f; font-weight: bold;'>Aktiverad Kurs</span>";
+                }
+
 
                 item += "</div>";
                 item += "</div>";
@@ -180,7 +197,7 @@ var Page = new function Page() {
             html += "<td>" + courses[index].name + "</td>";
             html += "<td>" + courses[index].credits + "</td>";
             html += "<td>" + courses[index].students.length + "</td>";
-            html += "<td><button id='edit_course' class='btn btn-info' data-item-id='" + courses[index].id + "' data-item-aktiv='" + courses[index].active + "'>" + "Edit" + "</button></td>";
+            html += "<td><button id='edit_course' class='btn btn-info' data-item-id='" + courses[index].id + "' data-item-aktiv='" + courses[index].active + "'>" + "Aktivera / Inaktivera " + "</button></td>";
             if (courses[index].active) {
                 html += "<td><div style='font-weight: bold; color: green;'>Aktiv kurs</div></td>";
             }
@@ -206,7 +223,15 @@ var Page = new function Page() {
             html += "<td>" + students[index].firstName + "</td>";
             html += "<td>" + students[index].lastName + "</td>";
             html += "<td>" + students[index].personnummer + "</td>";
-            html += "<td data-item-id='" + students[index].id + "'><button id='edit_student' class='btn btn-info' data-item-id='" + students[index].id + "'>Edit</button></td>";
+            html += "<td data-item-id='" + students[index].id + "'><button id='edit_student' class='btn btn-info editStudent' data-item-id='" + students[index].id + "'>Edit</button></td>";
+            html += "<td data-item-id='" + students[index].id + "'><button data-item-aktiv='" + students[index].aktiv + "' id='aktiv_student' class='btn btn-info aktivStudent' data-item-id='" + students[index].id + "' style='background: lightblue'>Aktivera/Inaktivera</button></td>";
+            // Check if the student is aktiv or inactive
+            if (students[index].active) {
+                html += "<td><div style='font-weight: bold; color: green;'>Aktiv Student</div></td>";
+            }
+            else {
+                html += "<td><div style='font-weight: bold; color: red;'>Inaktiv Student</div></td>";
+            }
             html += "</tr>";
         }
         tbody.append(html);
@@ -214,6 +239,28 @@ var Page = new function Page() {
         configuration.studentListPlaceholder.fadeIn(500);
     }
 
+    // Aktiver/Inakteverar en student
+    Page.activatStudentDetails = function (id) {
+        console.log("[Page.displayStudentDetails]: Fetching item having id: " + id);
+
+        $.ajax({
+            type: "GET",
+            url: configuration.studentsUrl + id
+        }).done(function (data) {
+
+            data.active = !data.active;
+            console.log(data.active);
+
+            var aktiv = data.active;
+
+            Page.saveStudentDetails(data);
+
+        }).error(function (jqXHR, textStatus, errorThrown) {
+            console.log(jqXHR.responseText || textStatus);
+        });
+    }
+
+    // Aktivera/Inaktiverar kurser
     Page.activatCourseDetails = function (id) {
         console.log("[Page.displayCourseDetails]: Fetching item having id: " + id);
 

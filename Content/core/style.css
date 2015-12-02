@@ -89,3 +89,12 @@ body {
     height: 34px;
     width: 175px;
 }
+
+#student_link{
+    //display: none;
+}
+
+#antal_students{
+    color: green;
+    font-weight: bold;
+}
